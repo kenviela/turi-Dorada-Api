@@ -1,5 +1,6 @@
+const { DB_URL } = process.env;
 const { MongoClient, ObjectId } = require("mongodb");
-const url = "mongodb://127.0.0.1:27017";
+const url = DB_URL;
 const client = new MongoClient(url);
 const name = "turi_dorada";
 

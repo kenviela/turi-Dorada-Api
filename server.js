@@ -12,7 +12,7 @@ app.use(express.urlencoded());
 app.use(cors());
 app.use("/api", apiRoutes);
 app.get("/", async (request, response) => {
-  response.send("Hello world");
+  response.json("todo bien");
 });
 app.listen(port, async () => {
   try {
